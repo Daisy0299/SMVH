@@ -2,7 +2,6 @@ const appContent = {
   translations: {
     vi: {
       brandSubtitle: 'Khám phá di sản địa phương',
-
       aboutTitle: 'Tittle',
       aboutDescription: 'description',
       searchPlaceholder: 'Tìm kiếm địa điểm, từ khóa...',
@@ -36,15 +35,14 @@ const appContent = {
     },
     en: {
       brandSubtitle: 'Discover local heritage',
-      aboutKicker: 'Project',
-      aboutTitle: 'The "Colors of Culture" Project',
-      aboutDescription: 'Born from a love for the distinct shades of Vietnamese heritage, Colors of Culture is a warm and nostalgic journey that connects generations through local history, festivals, and traditional craft villages.',
-      aboutDescriptionExtra: 'We believe culture should not only be preserved, but also retold in a modern and approachable way so it can travel further across communities and younger audiences.',
+      aboutTitle: 'Tittle',
+      aboutDescription: 'description',
       searchPlaceholder: 'Search destinations, keywords...',
       footerInfoTitle: 'Contact information',
       footerEmail: 'Email:',
       footerPhone: 'Phone:',
       footerCopyright: '© 2026 ... All rights reserved.',
+      readMore: 'Read more',  
       statisticsPlaces: 'Cultural places',
       statisticsImages: 'Archive images',
       statisticsVisits: 'Total visits',
@@ -62,7 +60,6 @@ const appContent = {
       detailRecognized: 'Recognized',
       detailBuilt: 'Built',
       detailBack: 'Back to homepage',
-      detailViewAll: 'View all',
       detailVideoLabel: 'Introduction video',
       shareFacebook: 'Facebook',
       shareZalo: 'Zalo',
@@ -147,7 +144,7 @@ const appContent = {
         'assets/images/co-do-hue.svg'
       ],
       videoThumbnail: 'assets/images/co-do-hue.svg',
-      videoUrl: 'https://www.youtube.com/watchQ',
+      videoUrl: 'https://www.youtube.com/',
       mapEmbed: 'https://www.google.com/maps?q=Hue%20Imperial%20City&output=embed',
       latitude: 16.4637,
       longitude: 107.5909
@@ -189,7 +186,7 @@ const appContent = {
         'assets/images/ho-hoan-kiem.svg'
       ],
       videoThumbnail: 'assets/images/co-do-hue.svg',
-      videoUrl: 'https://www.youtube.com/watchQ',
+      videoUrl: 'https://www.youtube.com/',
       mapEmbed: 'https://www.google.com/maps?q=Hue%20Imperial%20City&output=embed',
       latitude: 16.4637,
       longitude: 107.5909
@@ -231,7 +228,7 @@ const appContent = {
         'assets/images/ho-hoan-kiem.svg'
       ],
       videoThumbnail: 'assets/images/co-do-hue.svg',
-      videoUrl: 'https://www.youtube.com/watchQ',
+      videoUrl: 'https://www.youtube.com/',
       mapEmbed: 'https://www.google.com/maps?q=Hue%20Imperial%20City&output=embed',
       latitude: 16.4637,
       longitude: 107.5909
@@ -273,7 +270,7 @@ const appContent = {
         'assets/images/ho-hoan-kiem.svg'
       ],
       videoThumbnail: 'assets/images/co-do-hue.svg',
-      videoUrl: 'https://www.youtube.com/watchQ',
+      videoUrl: 'https://www.youtube.com/',
       mapEmbed: 'https://www.google.com/maps?q=Hue%20Imperial%20City&output=embed',
       latitude: 16.4637,
       longitude: 107.5909
@@ -315,7 +312,7 @@ const appContent = {
         'assets/images/ho-hoan-kiem.svg'
       ],
       videoThumbnail: 'assets/images/co-do-hue.svg',
-      videoUrl: 'https://www.youtube.com/watchQ',
+      videoUrl: 'https://www.youtube.com/',
       mapEmbed: 'https://www.google.com/maps?q=Hue%20Imperial%20City&output=embed',
       latitude: 16.4637,
       longitude: 107.5909
