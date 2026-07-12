@@ -147,9 +147,32 @@ function renderDetailPage() {
             <h2>${t('detailShare')}</h2>
           </div>
           <div class="share-actions share-actions-centered">
-            <a class="share-button" target="_blank" rel="noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl())}"><i class="fa-brands fa-square-facebook"></i></a>
-            <a class="share-button" target="_blank" rel="noreferrer" href="https://zalo.me/share?url=${encodeURIComponent(shareUrl())}">${t('shareZalo')}</a>
-            <button class="share-button" type="button" id="copyLinkButton"><i class="fa-solid fa-copy"></i></button>
+            <a
+              class="share-button"
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl())}"
+              aria-label="${t('shareFacebook')}"
+              title="${t('shareFacebook')}"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              <span class="visually-hidden">${t('shareFacebook')}</span>
+            </a>
+            <a
+              class="share-button"
+              target="_blank"
+              rel="noreferrer"
+              href="https://zalo.me/share?url=${encodeURIComponent(shareUrl())}"
+              aria-label="${t('shareZalo')}"
+              title="${t('shareZalo')}"
+            >
+              <span class="share-button-label" aria-hidden="true">Z</span>
+              <span class="visually-hidden">${t('shareZalo')}</span>
+            </a>
+            <button class="share-button" type="button" id="copyLinkButton" aria-label="${t('shareCopy')}" title="${t('shareCopy')}">
+              <i class="fa-solid fa-copy" aria-hidden="true"></i>
+              <span class="visually-hidden">${t('shareCopy')}</span>
+            </button>
           </div>
         </div>
       </div>
@@ -170,11 +193,26 @@ function bindDetailEvents(place) {
 
   const copyButton = document.getElementById('copyLinkButton');
   if (copyButton) {
+    const copyDefaultMarkup = `
+      <i class="fa-solid fa-copy" aria-hidden="true"></i>
+      <span class="visually-hidden">${t('shareCopy')}</span>
+    `;
+    const copySuccessMarkup = `
+      <i class="fa-solid fa-check" aria-hidden="true"></i>
+      <span class="visually-hidden">${t('shareCopied')}</span>
+    `;
+
     copyButton.addEventListener('click', async () => {
       await navigator.clipboard.writeText(shareUrl());
-        copyButton.textContent = t('shareCopied');
+      copyButton.innerHTML = copySuccessMarkup;
+      copyButton.setAttribute('aria-label', t('shareCopied'));
+      copyButton.setAttribute('title', t('shareCopied'));
+      copyButton.classList.add('is-copied');
       window.setTimeout(() => {
-        copyButton.textContent = t('shareCopy');
+        copyButton.innerHTML = copyDefaultMarkup;
+        copyButton.setAttribute('aria-label', t('shareCopy'));
+        copyButton.setAttribute('title', t('shareCopy'));
+        copyButton.classList.remove('is-copied');
       }, 1400);
     });
   }
