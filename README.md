@@ -9,7 +9,7 @@ Mở file `assets/js/data.js`, trong mảng `appContent.places` thêm 1 object m
   title: { vi: 'Tên tiếng Việt', en: 'English name' },
   address: { vi: 'Địa chỉ tiếng Việt', en: 'English address' },
   shortDescription: { vi: 'Mô tả ngắn', en: 'Short description' },
-  intro: { vi: 'Đoạn giới thiệu ngắn', en: 'Short intro' },
+  intro: { vi: 'Giới thiệu ngắn', en: 'Short intro' },
   builtYear: '...',
   recognizedYear: '...',
   openingHours: { vi: '08:00 - 17:00', en: '08:00 AM - 05:00 PM' },
