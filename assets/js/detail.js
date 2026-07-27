@@ -116,14 +116,7 @@ function renderDetailPage() {
           <div class="gallery-grid">
             ${place.gallery.map((image) => `<img src="${image}" alt="${place.title[detailState.lang]}">`).join('')}
           </div>
-          <div class="video-card mt-4">
-            <div class="section-head-inline">
-              <h2>${t('detailVideoLabel')}</h2>
-            </div>
-            <a class="video-thumb" href="${place.videoUrl}" target="_blank" rel="noreferrer">
-              <img src="${place.videoThumbnail}" alt="${place.title[detailState.lang]}">
-            </a>
-          </div>
+
         </div>
       </div>
     </section>
