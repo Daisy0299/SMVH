@@ -66,6 +66,13 @@ textarea {
   background: linear-gradient(135deg, var(--primary), #c2552c);
   color: #fff;
   font-weight: 800;
+  overflow: hidden;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .brand-text {
