@@ -8,7 +8,7 @@ const appContent = {
       footerInfoTitle: 'Thông tin liên hệ',
       footerEmail: 'Gmail:',
       footerPhone: 'SĐT: ',
-      footerCopyright: '© 2026 ... giữ toàn quyền bản quyền.',
+      footerCopyright: '© 2026 . Phường Thới An giữ toàn quyền bản quyền.',
       readMore: 'Xem chi tiết',
       statisticsPlaces: 'Địa điểm văn hóa',
       statisticsImages: 'Hình ảnh tư liệu',
@@ -41,7 +41,7 @@ const appContent = {
       footerInfoTitle: 'Contact information',
       footerEmail: 'Email:',
       footerPhone: 'Phone:',
-      footerCopyright: '© 2026 ... All rights reserved.',
+      footerCopyright: '© 2026 . Thoi An Ward All rights reserved.',
       readMore: 'Read more',  
       statisticsPlaces: 'Cultural places',
       statisticsImages: 'Archive images',
@@ -69,38 +69,38 @@ const appContent = {
   },
   slides: [
     {
-      slug: 'co-do-hue',
-      image: 'assets/images/co-do-hue.svg',
+      slug: 'vuon-cau-do',
+      image: './assets/images/Khu di tích lịch sử Vườn Cau đỏ/7.png',
       title: {
-        vi: 'Cố đô Huế, nơi ký ức triều Nguyễn còn sống',
-        en: 'The Imperial City of Hue, where Nguyen memories still live'
+        vi: 'Khu di tích lịch sử Vườn Cau Đỏ',
+        en: 'Red Areca Nut Garden Historical Relic Site'
       },
       subtitle: {
-        vi: 'Khám phá dấu ấn lịch sử, kiến trúc và lễ nghi cung đình.',
+        vi: 'Khu tưởng niệm Vườn Cau Đỏ là căn cứ địa cách mạng kiên cường của Chiến khu An Phú Đông, biểu tượng sáng ngời cho chủ nghĩa anh hùng và tinh thần bất khuất của quân dân Sài Gòn - Gia Định.',
+        en: 'Red Areca Nut Garden Memorial Area was a resilient revolutionary base of the An Phu Dong War Zone, serving as a shining symbol of heroism and the indomitable spirit of the people and armed forces of Saigon - Gia Dinh.'
+      }
+    },
+    {
+      slug: 'dinh-quoi-an',
+      image: 'assets/images/co-do-hue.svg',
+      title: {
+        vi: 'Đình Quới An',
+        en: ''
+      },
+      subtitle: {
+        vi: 'Đình Quới An là ngôi đình cổ kính mang bề dày lịch sử lâu đời của đất Sài Gòn - Gia Định, nơi lưu giữ bản sắc phong thần quý giá do vua Tự Đức ban tặng năm 1852 và là trung tâm sinh hoạt tâm linh, tín ngưỡng cộng đồng bền vững của nhân dân địa phương qua nhiều thế hệ.',
         en: 'Explore royal history, architecture and ceremonial heritage.'
       }
     },
     {
-      slug: 'co-do-hue',
+      slug: 'vo-tien-su',
       image: 'assets/images/co-do-hue.svg',
       title: {
-        vi: 'Cố đô Huế, nơi ký ức triều Nguyễn còn sống',
+        vi: 'Võ Tiên Sư',
         en: 'The Imperial City of Hue, where Nguyen memories still live'
       },
       subtitle: {
-        vi: 'Khám phá dấu ấn lịch sử, kiến trúc và lễ nghi cung đình.',
-        en: 'Explore royal history, architecture and ceremonial heritage.'
-      }
-    },
-    {
-      slug: 'co-do-hue',
-      image: 'assets/images/co-do-hue.svg',
-      title: {
-        vi: 'Cố đô Huế, nơi ký ức triều Nguyễn còn sống',
-        en: 'The Imperial City of Hue, where Nguyen memories still live'
-      },
-      subtitle: {
-        vi: 'Khám phá dấu ấn lịch sử, kiến trúc và lễ nghi cung đình.',
+        vi: 'Võ Tiên Sư là công trình tín ngưỡng dân gian lâu đời của vùng đất Thới An, nơi tôn vinh, tri ân bậc Tiên sư khai sáng truyền thống và là không gian sinh hoạt tâm linh gắn kết cộng đồng cư dân địa phương.',
         en: 'Explore royal history, architecture and ceremonial heritage.'
       }
     },
@@ -108,7 +108,7 @@ const appContent = {
   ],
   places: [
     {
-      slug: 'co-do-hue',
+      slug: 'vuon-cau-do',
       title: { vi: 'Cố đô Huế', en: 'Imperial City of Hue' },
       address: { vi: 'Thành phố Huế, Thừa Thiên Huế', en: 'Hue City, Thua Thien Hue' },
       shortDescription: {
