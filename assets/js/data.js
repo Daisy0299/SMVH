@@ -2,13 +2,15 @@ const appContent = {
   translations: {
     vi: {
       brandSubtitle: 'Khám phá di sản địa phương',
-      aboutTitle: 'Tittle',
-      aboutDescription: 'description',
+      aboutTitle: 'Di Sản Văn Hóa & Di Tích Lịch Sử Phường Thới An',
+      aboutDescription: 'Nơi lưu giữ và lan tỏa những giá trị văn hóa - lịch sử lâu đời của mảnh đất Thới An anh hùng. Hãy cùng khám phá hệ thống các đình, miếu cổ kính và các khu di tích truyền thống qua không gian số hóa hiện đại.',
       searchPlaceholder: 'Tìm kiếm địa điểm, từ khóa...',
-      footerInfoTitle: 'Thông tin liên hệ',
-      footerEmail: 'Gmail:',
-      footerPhone: 'SĐT: ',
-      footerCopyright: '© 2026 . Phường Thới An giữ toàn quyền bản quyền.',
+      footerSocialTitle: 'MẠNG XÃ HỘI',
+      footerContactTitle: 'THÔNG TIN LIÊN HỆ', // Sửa lại cho đúng format tiêu đề
+      footerAddressValue: 'Phòng A.210, 669 Đỗ Mười, Linh Xuân, TP.HCM',
+      footerEmail: 'Gmail: doanthanhnien@uel.edu.vn',
+      footerPhone: 'SĐT: (028) 3 7244 555',
+      footerCopyright: '© 2026 Đoàn Trường Đại học Kinh tế - Luật, ĐHQG-HCM.',
       readMore: 'Xem chi tiết',
       statisticsPlaces: 'Địa điểm văn hóa',
       statisticsImages: 'Hình ảnh tư liệu',
@@ -35,13 +37,15 @@ const appContent = {
     },
     en: {
       brandSubtitle: 'Discover local heritage',
-      aboutTitle: 'Tittle',
-      aboutDescription: 'description',
+      aboutTitle: 'Cultural Heritage & Historical Sites of Thoi An Ward',
+      aboutDescription: 'A place that preserves and spreads the long-standing cultural and historical values of the heroic land of Thoi An. Join us in exploring the system of ancient temples, shrines, and traditional relic sites through a modern digital space.',
       searchPlaceholder: 'Search destinations, keywords...',
-      footerInfoTitle: 'Contact information',
-      footerEmail: 'Email:',
-      footerPhone: 'Phone:',
-      footerCopyright: '© 2026 . Thoi An Ward All rights reserved.',
+      footerSocialTitle: 'SOCIAL MEDIA',
+      footerContactTitle: 'CONTACT INFORMATION',
+      footerAddressValue: 'Room A.210, 669 Do Muoi, Linh Xuan, Thu Duc City',
+      footerEmail: 'Email: doanthanhnien@uel.edu.vn',
+      footerPhone: 'Phone: (028) 3 7244 555',
+      footerCopyright: '© 2026 Youth Union of the University of Economics and Law, VNU-HCM.',
       readMore: 'Read more',
       statisticsPlaces: 'Cultural places',
       statisticsImages: 'Archive images',
@@ -78,7 +82,7 @@ const appContent = {
       subtitle: {
         vi: 'Khu tưởng niệm Vườn Cau Đỏ là căn cứ địa cách mạng kiên cường của Chiến khu An Phú Đông, biểu tượng sáng ngời cho chủ nghĩa anh hùng và tinh thần bất khuất của quân dân Sài Gòn - Gia Định.',
         en: 'Red Areca Nut Garden Memorial Area was a resilient revolutionary base of the An Phu Dong War Zone, serving as a shining symbol of heroism and the indomitable spirit of the people and armed forces of Saigon - Gia Dinh.'
-      }
+      },
     },
     {
       slug: 'dinh-quoi-an',
@@ -107,6 +111,61 @@ const appContent = {
 
   ],
   places: [
+    {
+      slug: 'vuon-cau-do',
+      title: {
+        vi: 'Khu di tích lịch sử Vườn Cau Đỏ',
+        en: 'Red Areca Nut Garden Historical Relic Site'
+      },
+      address: {
+        vi: 'Đường TX52, Phường Thới An, Thành phố Hồ Chí Minh',
+        en: 'TX52 Street, Thoi An Ward, Ho Chi Minh City'
+      },
+      shortDescription: {
+        vi: 'Khu tưởng niệm Vườn Cau Đỏ là căn cứ địa cách mạng kiên cường của Chiến khu An Phú Đông, biểu tượng sáng ngời cho chủ nghĩa anh hùng và tinh thần bất khuất của quân dân Sài Gòn - Gia Định.',
+        en: 'Red Areca Nut Garden Memorial Area was a resilient revolutionary base of the An Phu Dong War Zone, serving as a shining symbol of heroism and the indomitable spirit of the people and armed forces of Saigon - Gia Dinh.'
+      },
+      intro: {
+        vi: 'Khu tưởng niệm Vườn Cau Đỏ là căn cứ địa cách mạng kiên cường của Chiến khu An Phú Đông, biểu tượng sáng ngời cho chủ nghĩa anh hùng và tinh thần bất khuất của quân dân Sài Gòn - Gia Định.',
+        en: 'Red Areca Nut Garden Memorial Area was a resilient revolutionary base of the An Phu Dong War Zone, serving as a shining symbol of heroism and the indomitable spirit of the people and armed forces of Saigon - Gia Dinh.'
+      },
+      builtYear: '2010',
+      recognizedYear: '2025',
+      openingHours: {
+        vi: 'Giờ hành chính',
+        en: 'Office hours'
+      },
+      image: 'assets/images/vuon-cau-do/7.png',
+      coverImages: [
+        'assets/images/vuon-cau-do/7.png'
+      ],
+      articleImage: 'assets/images/vuon-cau-do/7.png',
+      history: {
+        vi: 'Vào ngày 25/12/1945, Hội nghị cán bộ chủ chốt tỉnh Gia Định diễn ra tại Vườn Cau Đỏ dưới sự chủ trì của Bí thư Tỉnh ủy Phạm Văn Khung đã quyết định thành lập Chiến khu An Phú Đông - chiến khu đầu tiên ở Nam Bộ. Nằm ở vị trí địa hình sông rạch chằng chịt và chỉ cách thủ phủ Sài Gòn vài kilômét, Vườn Cau Đỏ được chọn làm trạm đón tiếp công nhân, đặt xưởng quân khí sản xuất vũ khí và là nơi trú đóng của các cơ quan đầu não kháng chiến. \n Trải qua hai cuộc kháng chiến chống Pháp và chống Mỹ, nơi đây đã chứng kiến nhiều trận đánh oanh liệt, chống trả các cuộc càn quét dữ dội của địch (như trận phục kích tiêu diệt lính ngụy năm 1968, đánh thiệt hại tiểu đoàn dù năm 1971...). Dù bị đánh phá ác liệt, Vườn Cau Đỏ vẫn đứng vững nhờ sự che chở, nuôi giấu và tiếp tế của nhân dân địa phương.',
+        en: 'On December 25, 1945, a conference of key officials of Gia Dinh province took place at the Red Areca Nut Garden under the chair of Provincial Party Committee Secretary Pham Van Khung, deciding to establish the An Phu Dong War Zone — the first resistance base in Southern Vietnam. Located in a region with dense river networks just a few kilometers from the heart of Saigon, the Red Areca Nut Garden was chosen as a reception station for workers, a site for military workshops to produce weapons, and a base for resistance leadership agencies.\n Throughout two resistance wars against the French and the Americans, this site witnessed many heroic battles, fighting back against ferocious enemy sweeps (such as the ambush destroying puppet troops in 1968, damaging an airborne battalion in 1971...). Despite fierce bombings, the Red Areca Nut Garden stood firm thanks to the protection, shelter, and supplies provided by the local people.'
+      },
+      culturalMeaning: {
+        vi: 'Vườn Cau Đỏ là biểu tượng cho sức mạnh đoàn kết quân - dân và tri ân những đóng góp to lớn của các thế hệ đi trước. Toàn vùng chiến khu xưa ghi nhận 787 hộ gia đình có công với cách mạng, 516 liệt sĩ và 17 Mẹ Việt Nam Anh hùng. \n Ngày nay, Khu tưởng niệm Vườn Cau Đỏ đã trở thành "địa chỉ đỏ" quan trọng phục vụ các hoạt động về nguồn, giáo dục truyền thống yêu nước cho thế hệ trẻ. Hằng năm vào dịp mùng 4 Tết, nơi đây diễn ra lễ họp mặt truyền thống trang trọng, kết nối các thế hệ cán bộ lão thành, Mẹ Việt Nam Anh hùng và nhân dân địa phương. Công trình vừa thể hiện đạo lý "Uống nước nhớ nguồn", vừa là điểm tựa tinh thần thúc đẩy phường Thới An phát triển ngày càng văn minh, hiện đại.',
+        en: 'The Red Areca Nut Garden stands as a symbol of military-civilian unity and gratitude for the immense contributions of past generations. The entire former war zone recorded 787 families with revolutionary merit, 516 fallen martyrs, and 17 Heroic Vietnamese Mothers.\n Today, the Red Areca Nut Garden Memorial Area has become an important "red address" for traditional educational activities and fostering patriotism among the younger generation. Annually on the 4th day of the Lunar New Year, a solemn traditional gathering takes place here, connecting generations of senior cadres, Heroic Vietnamese Mothers, and local residents. The site exemplifies the ethic of "When drinking water, remember its source," while acting as a spiritual foundation encouraging Thoi An ward\'s civilized and modern development.'
+      },
+      gallery: [
+        'assets/images/vuon-cau-do/1.png',
+        'assets/images/vuon-cau-do/2.png',
+        'assets/images/vuon-cau-do/3.png',
+        'assets/images/vuon-cau-do/4.png',
+        'assets/images/vuon-cau-do/5.png',
+        'assets/images/vuon-cau-do/6.png',
+        'assets/images/vuon-cau-do/7.png',
+        'assets/images/vuon-cau-do/8.png',
+        'assets/images/vuon-cau-do/9.png',
+        'assets/images/vuon-cau-do/10.png',
+        'assets/images/vuon-cau-do/11.png',
+        'assets/images/vuon-cau-do/12.png'
+      ],
+      mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.887960733018!2d106.6804621!3d10.896118699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d7cbb6ef8a97%3A0x7245d859c189b5f!2zRGkgdMOtY2ggbOG7i2NoIHPhu60gS2h1IFTGsOG7n25nIG5p4buHbSBWxrDhu51uIENhdSDEkOG7jw!5e0!3m2!1svi!2s!4v1785171368185!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin',
+      latitude: 10.8961187,
+      longitude: 106.6804621
+    },
     {
       slug: 'dinh-thoi-an',
       title: {
@@ -340,61 +399,6 @@ const appContent = {
       mapEmbed: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d489.7910835075696!2d106.67194511139041!3d10.862587258926082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529cc696fa56d%3A0x2ae477b6ae10f57f!2zVsO1IFRpw6puIFPGsA!5e0!3m2!1svi!2s!4v1785164875952!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin',
       latitude: 10.865321,
       longitude: 106.660145
-    },
-    {
-      slug: 'vuon-cau-do',
-      title: {
-        vi: 'Khu di tích lịch sử Vườn Cau Đỏ',
-        en: 'Red Areca Nut Garden Historical Relic Site'
-      },
-      address: {
-        vi: 'Đường TX52, Phường Thới An, Thành phố Hồ Chí Minh',
-        en: 'TX52 Street, Thoi An Ward, Ho Chi Minh City'
-      },
-      shortDescription: {
-        vi: 'Khu tưởng niệm Vườn Cau Đỏ là căn cứ địa cách mạng kiên cường của Chiến khu An Phú Đông, biểu tượng sáng ngời cho chủ nghĩa anh hùng và tinh thần bất khuất của quân dân Sài Gòn - Gia Định.',
-        en: 'Red Areca Nut Garden Memorial Area was a resilient revolutionary base of the An Phu Dong War Zone, serving as a shining symbol of heroism and the indomitable spirit of the people and armed forces of Saigon - Gia Dinh.'
-      },
-      intro: {
-        vi: 'Khu tưởng niệm Vườn Cau Đỏ là căn cứ địa cách mạng kiên cường của Chiến khu An Phú Đông, biểu tượng sáng ngời cho chủ nghĩa anh hùng và tinh thần bất khuất của quân dân Sài Gòn - Gia Định.',
-        en: 'Red Areca Nut Garden Memorial Area was a resilient revolutionary base of the An Phu Dong War Zone, serving as a shining symbol of heroism and the indomitable spirit of the people and armed forces of Saigon - Gia Dinh.'
-      },
-      builtYear: '2010',
-      recognizedYear: '2025',
-      openingHours: {
-        vi: 'Giờ hành chính',
-        en: 'Office hours'
-      },
-      image: 'assets/images/vuon-cau-do/7.png',
-      coverImages: [
-        'assets/images/vuon-cau-do/7.png'
-      ],
-      articleImage: 'assets/images/vuon-cau-do/7.png',
-      history: {
-        vi: 'Vào ngày 25/12/1945, Hội nghị cán bộ chủ chốt tỉnh Gia Định diễn ra tại Vườn Cau Đỏ dưới sự chủ trì của Bí thư Tỉnh ủy Phạm Văn Khung đã quyết định thành lập Chiến khu An Phú Đông - chiến khu đầu tiên ở Nam Bộ. Nằm ở vị trí địa hình sông rạch chằng chịt và chỉ cách thủ phủ Sài Gòn vài kilômét, Vườn Cau Đỏ được chọn làm trạm đón tiếp công nhân, đặt xưởng quân khí sản xuất vũ khí và là nơi trú đóng của các cơ quan đầu não kháng chiến. \n Trải qua hai cuộc kháng chiến chống Pháp và chống Mỹ, nơi đây đã chứng kiến nhiều trận đánh oanh liệt, chống trả các cuộc càn quét dữ dội của địch (như trận phục kích tiêu diệt lính ngụy năm 1968, đánh thiệt hại tiểu đoàn dù năm 1971...). Dù bị đánh phá ác liệt, Vườn Cau Đỏ vẫn đứng vững nhờ sự che chở, nuôi giấu và tiếp tế của nhân dân địa phương.',
-        en: 'On December 25, 1945, a conference of key officials of Gia Dinh province took place at the Red Areca Nut Garden under the chair of Provincial Party Committee Secretary Pham Van Khung, deciding to establish the An Phu Dong War Zone — the first resistance base in Southern Vietnam. Located in a region with dense river networks just a few kilometers from the heart of Saigon, the Red Areca Nut Garden was chosen as a reception station for workers, a site for military workshops to produce weapons, and a base for resistance leadership agencies.\n Throughout two resistance wars against the French and the Americans, this site witnessed many heroic battles, fighting back against ferocious enemy sweeps (such as the ambush destroying puppet troops in 1968, damaging an airborne battalion in 1971...). Despite fierce bombings, the Red Areca Nut Garden stood firm thanks to the protection, shelter, and supplies provided by the local people.'
-      },
-      culturalMeaning: {
-        vi: 'Vườn Cau Đỏ là biểu tượng cho sức mạnh đoàn kết quân - dân và tri ân những đóng góp to lớn của các thế hệ đi trước. Toàn vùng chiến khu xưa ghi nhận 787 hộ gia đình có công với cách mạng, 516 liệt sĩ và 17 Mẹ Việt Nam Anh hùng. \n Ngày nay, Khu tưởng niệm Vườn Cau Đỏ đã trở thành "địa chỉ đỏ" quan trọng phục vụ các hoạt động về nguồn, giáo dục truyền thống yêu nước cho thế hệ trẻ. Hằng năm vào dịp mùng 4 Tết, nơi đây diễn ra lễ họp mặt truyền thống trang trọng, kết nối các thế hệ cán bộ lão thành, Mẹ Việt Nam Anh hùng và nhân dân địa phương. Công trình vừa thể hiện đạo lý "Uống nước nhớ nguồn", vừa là điểm tựa tinh thần thúc đẩy phường Thới An phát triển ngày càng văn minh, hiện đại.',
-        en: 'The Red Areca Nut Garden stands as a symbol of military-civilian unity and gratitude for the immense contributions of past generations. The entire former war zone recorded 787 families with revolutionary merit, 516 fallen martyrs, and 17 Heroic Vietnamese Mothers.\n Today, the Red Areca Nut Garden Memorial Area has become an important "red address" for traditional educational activities and fostering patriotism among the younger generation. Annually on the 4th day of the Lunar New Year, a solemn traditional gathering takes place here, connecting generations of senior cadres, Heroic Vietnamese Mothers, and local residents. The site exemplifies the ethic of "When drinking water, remember its source," while acting as a spiritual foundation encouraging Thoi An ward\'s civilized and modern development.'
-      },
-      gallery: [
-        'assets/images/vuon-cau-do/1.png',
-        'assets/images/vuon-cau-do/2.png',
-        'assets/images/vuon-cau-do/3.png',
-        'assets/images/vuon-cau-do/4.png',
-        'assets/images/vuon-cau-do/5.png',
-        'assets/images/vuon-cau-do/6.png',
-        'assets/images/vuon-cau-do/7.png',
-        'assets/images/vuon-cau-do/8.png',
-        'assets/images/vuon-cau-do/9.png',
-        'assets/images/vuon-cau-do/10.png',
-        'assets/images/vuon-cau-do/11.png',
-        'assets/images/vuon-cau-do/12.png'
-      ],
-      mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.887960733018!2d106.6804621!3d10.896118699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d7cbb6ef8a97%3A0x7245d859c189b5f!2zRGkgdMOtY2ggbOG7i2NoIHPhu60gS2h1IFTGsOG7n25nIG5p4buHbSBWxrDhu51uIENhdSDEkOG7jw!5e0!3m2!1svi!2s!4v1785171368185!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin',
-      latitude: 10.8961187,
-      longitude: 106.6804621
     },
     {
       slug: 'dinh-quoi-an',
