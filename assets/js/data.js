@@ -1,6 +1,7 @@
 const appContent = {
   translations: {
     vi: {
+      Subtitle:'Công trình số hóa Di tích lịch sử & Địa điểm văn hóa phường Thới An',
       brandSubtitle: 'Khám phá di sản địa phương',
       aboutTitle: 'Di Sản Văn Hóa & Di Tích Lịch Sử Phường Thới An',
       aboutDescription: 'Nơi lưu giữ và lan tỏa những giá trị văn hóa - lịch sử lâu đời của mảnh đất Thới An anh hùng. Hãy cùng khám phá hệ thống các đình, miếu cổ kính và các khu di tích truyền thống qua không gian số hóa hiện đại.',
@@ -36,6 +37,7 @@ const appContent = {
       shareCopied: 'Đã sao chép',
     },
     en: {
+      Subtitle:'Digitalization Project of Historical Relics & Cultural Sites in Thoi An Ward',
       brandSubtitle: 'Discover local heritage',
       aboutTitle: 'Cultural Heritage & Historical Sites of Thoi An Ward',
       aboutDescription: 'A place that preserves and spreads the long-standing cultural and historical values of the heroic land of Thoi An. Join us in exploring the system of ancient temples, shrines, and traditional relic sites through a modern digital space.',
