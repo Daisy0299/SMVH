@@ -113,7 +113,29 @@ textarea {
   background: var(--primary);
   border-color: var(--primary);
 }
-
+@media (max-width: 991.98px) {
+  .navbar .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .navbar-brand {
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .lang-switch {
+    margin-left: 0 !important;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .lang-switch {
+    margin-left: auto;
+  }
+}
 .section-space {
   padding: 56px 0;
 }
